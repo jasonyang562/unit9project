@@ -1,0 +1,90 @@
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <title>Monk's Cafe</title>
+    </head>
+    <link href="css/styles.css" rel="stylesheet" />
+
+    <body>
+      <section>
+        <h1>Monk's Cafe</h1>
+        <h4>&ldquo;The Coffee Shop&rdquo;</h4>
+      
+       <img src="http://circuits-assets.generalassemb.ly/prod/asset/5475/toms-restaurant.jpg" alt="Monk's Cafe resetaurant." />  
+      </section>
+
+      <section>
+        <h2>Reservations</h2>
+        <div class="half reserve left ">
+          <h3>Make a Reservation</h3>
+          <form id="reservationForm">
+            <p>Name 
+              <input type="text" name="cName" class="cName" />
+            </p>
+            <p>Day 
+              <input type="text" name="day" class="reserveDay"/>
+            </p>
+            <p> 
+              <button>Confirm</button>
+            </p>
+          </form>
+        </div>
+
+        <div class="half reserve right ">
+          <h3>Existing Reservations</h3>
+            <table border="1" width="100%">
+              <thead>
+                <th>Name</th>
+                <th>Day</th>
+              </thead>
+                <!-- include handlebars template data within .reservations --> 
+              <tbody class="reservations">             
+              </tbody>
+            </table>
+        </div>
+      </section>  
+
+      <section>
+        <h2>Come Dine with Us</h2>
+        <div id="map">
+        <!-- include google map api with the coords: lat: 40.8054491, lng: -73.9654415 -->
+        </div>
+      </section>
+
+      <section>
+        <h2>Customer Review</h2>
+        <div class="half left">
+           <img src="http://circuits-assets.generalassemb.ly/prod/asset/5474/jerry.jpg" alt="Jerry Seinfeld & Geroge Costanza dining at our cafe."/>
+        </div>
+        <div class="half right">
+          <blockquote>&ldquo;Big lettuce,<br/> big carrots,<br/> tomatoes like volleyballs.&rdquo;
+            <footer>— Jerry Seinfeld, on The BIG Salad</footer>
+          </blockquote>
+        </div>
+      </section>  
+
+     <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/3.3.0/firebase.js"></script>
+
+    <script src="js/jquery.js"></script>
+
+    <!-- handlebars -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+
+    <script src="js/main.js"></script>
+
+    <!-- google maps --> 
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBfLZGzgq7WRmXEwT7X-3vLDtzQ_mmZfNA&callback=initMap">
+    </script>
+
+
+    <script id="reservation-template" type="text/x-handlebars-template">
+                 <tr >
+                    <td>{{name}}</td>
+                    <td>{{day}}</td>                 
+                </tr>          
+                </script>
+
+    </body>
+  </html>

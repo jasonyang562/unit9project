@@ -1,0 +1,100 @@
+body{
+	font-family: Helvetica, Arial, Sans-serif;
+	position: relative;
+	padding: 0 50px;
+}
+
+h1, h2, h3, h4, th{
+	text-align: center;
+}
+
+h1{
+	margin-bottom:0;
+	font-size: 30px;
+}
+
+h2, h4{
+	margin-top: 0;
+}
+
+img{
+	width: 100%;
+}
+
+section{
+	margin-bottom: 50px;
+	display:block;
+	float:none;
+	clear:both;
+	width: 100%;
+}
+
+.half{
+	width: 48%;
+	vertical-align: top;
+	display:block;
+}
+
+.reserve{
+	border: 1px solid grey;
+	min-height: 200px;
+	margin-bottom: 50px;	
+}
+
+.reserve p,
+.reserve p button{
+	font-weight: bold;
+}
+
+.reserve p{
+	padding: 0 50px;
+}
+
+.reserve table{
+	padding: 0 50px 50px;
+	border: none;
+}
+
+.reserve td{
+    width: 50%;
+    text-align: center;
+}
+
+.reserve p button{
+	font-size: 16px;
+	color: #fff;
+	border: none;
+	padding: 5px;
+	width: 81%;
+	float: right
+}
+
+.reserve p input{
+	width: 80%;
+	float: right
+}
+
+.left{
+	float: left;
+}
+
+.right{
+	float: right;
+}
+
+#map{
+
+	height: 400px;
+	border: 1px solid black;
+}
+
+blockquote{
+	text-align: right;
+	font-size: 24px;
+    line-height: 3;
+}
+
+
+blockquote footer{
+	margin-top: 25px;
+}
